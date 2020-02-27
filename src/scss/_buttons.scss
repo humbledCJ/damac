@@ -1,0 +1,86 @@
+.btn {
+	font-size: 1em;
+	font-weight: bold;
+	padding-left: 40px!important;
+	padding-right: 40px!important;
+	padding-top: 15px!important;
+	padding-bottom: 15px!important;
+	line-height: 1px;
+	position: relative;
+	border-radius: 2px;
+	color: #fff!important;
+
+	&.disabled, &:disabled {
+		opacity: 1;
+		cursor: no-drop;
+	}
+
+	&.loading {
+		opacity: 1;
+		cursor: wait;
+	}
+
+	&.btn-green {
+		background-color: #18C77E !important;
+    border-color: #18C77E !important;
+    box-shadow: 0 10px 20px -5px rgba(113, 222, 176, 0.5);
+
+		&:hover {
+			background-color: #16b975 !important;
+    	border-color: #16b975 !important;
+    	box-shadow: 0 10px 20px -20px rgba(113, 222, 176, 0.5);
+		}
+	}
+
+	&.btn-primary {
+		background-color: #FFAD54!important;
+		border-color: #FFAD54!important;
+
+		&:hover {
+			background-color: #eaa04f!important;
+			border-color: #eaa04f!important;
+		}
+	}
+
+	&.btn-link {
+		padding-left: 0 !important;
+    padding-right: 7px !important;
+    font-weight: normal;
+    color: $font-color-primary !important;
+
+    &:after {
+    	content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: -5px;
+	    width: 5px;
+	    height: 100%;
+	    background-image: url(../assets/images/icons/chevron-right.svg);
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    transition: all 0.2s ease-in-out;
+    }
+	}
+
+	&.btn-rounded {
+		border-radius: 20px;
+	}
+
+	&.btn-phone {
+		padding-left: 40px!important;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: #4CF79B;
+			top: 50%;
+			left: 20px;
+			transform: translateY(-50%);
+		}
+	}
+}

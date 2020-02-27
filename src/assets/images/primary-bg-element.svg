@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="922px" height="919px" viewBox="0 0 922 919" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.296903306" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-ver.-2.4" transform="translate(-518.000000, -1625.000000)" fill="url(#linearGradient-1)">
+            <g id="Oval-3" transform="translate(0.000000, 1372.000000)">
+                <path d="M978.345533,1232 C1241.3329,1232 1539.01583,960.579353 1527.68631,711.452009 C1515.98976,454.253776 1499.09298,346.708737 1368.78674,266.144097 C1294.08766,219.959778 1068.45408,307.706275 978.345533,341.251479 C764.550385,420.842176 518,558.905187 518,808.274561 C518,1057.64393 715.358164,1232 978.345533,1232 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>
