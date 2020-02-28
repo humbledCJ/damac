@@ -20,6 +20,26 @@
 		cursor: wait;
 	}
 
+	&.btn-golf {
+		&:after {
+			content: '';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: 125px;
+	    height: 125px;
+	    transform: translate(66%, -50%);
+	    background-image: url(../assets/images/icons/golf.png);
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    transition: all 0.2s ease-in-out;
+		}
+
+		&:hover::after {
+			transform: translate(70%, -50%);
+		}
+	}
+
 	&.btn-green {
 		background-color: #18C77E !important;
     border-color: #18C77E !important;
