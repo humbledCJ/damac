@@ -77,17 +77,20 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand align-items-center">
                         <a class="navbar-brand p-0 m-0" href="/">
-                            <img src="assets/images/logo.svg" class="logo-lg" alt="Damac Logo" title="Damac Logo">
+                            <img src="assets/images/logo.svg" alt="Damac Logo" title="Damac Logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item mr-4">
-                                    <a class="nav-link btn btn-rounded btn-green btn-phone" href="#">+343 (233) 323-11-10</a>
+                                <li class="nav-item mr-0 mr-md-4">
+                                    <a class="nav-link btn btn-rounded btn-green btn-phone" href="#">
+                                        <span class="d-none d-md-block">+343 (233) 323-11-10</span>
+                                        <span class="d-block d-md-none"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    </a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item d-none d-md-block">
                                     <a class="nav-link transparent p-0 pt-1" href="#">Вам перезвонить?</a>
                                 </li>
                             </ul>
@@ -109,7 +112,7 @@
         </div>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-md-6 col-lg-5">
+                <div class="col-md-8 col-lg-6 col-xl-5">
                     <form class="inverse-horizontal-offset animation-opacity form-linear" onsubmit="return false;" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="input-group mb-3">
@@ -124,30 +127,30 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-6 col-lg-7">
+                <div class="col-md-3 col-lg-6 col-xl-7">
                 </div>
             </div>
         </div>
-        <div class="container moved">
+        <div class="container moved mt-5 mt-lg-0">
             <div class="row text-center">
                 <div class="col-12 box box-white">
-                    <div class="row">
-                        <div class="col-sm-3">
+                    <div class="row" id="features">
+                        <div class="col-12 col-sm-6 col-lg-3 mb-0 mb-sm-5 mb-lg-0">
                             <img src="assets/images/icons/features-1.svg" class="mb-4" height="72">
                             <h4 class="mb-1">Легкое оформление</h4>
                             <p class="mb-0">Оформление от 1 дня</p>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-12 col-sm-6 col-lg-3 mb-0 mb-sm-5 mb-lg-0">
                             <img src="assets/images/icons/features-2.svg" class="mb-4" height="72">
                             <h4 class="mb-1">Поездка за наш счет</h4>
                             <p class="mb-0">Мы оплатим билеты и проживание</p>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <img src="assets/images/icons/features-3.svg" class="mb-4" height="72">
                             <h4 class="mb-1">Получение резиденства</h4>
                             <p class="mb-0">Вы получите резидентство Дубая</p>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <img src="assets/images/icons/features-4.svg" class="mb-4" height="72">
                             <h4 class="mb-1">Льготное налообложение</h4>
                             <p class="mb-0">НДФЛ = 0%</p>
@@ -265,7 +268,7 @@
         </div>
         <div class="container mb-3">
             <div class="row">
-                <div class="col-sm-5 blured-bg">
+                <div class="col-md-6 col-lg-5 blured-bg">
                     <h3 data-bg-text="Damac" class="mb-5">Damac Properties – это ...</h3>
                     <div class="box box-white box-features mb-5" data-feature-number="01">
                         <h5>Жизнь рядом с океаном</h5>
@@ -284,21 +287,24 @@
                         <p>Вы сможете ощутить все достоинства жизни рядом с океаном!</p>
                     </div>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-md-6 col-lg-7">
                     <div class="masonry-with-columns">
                         <div>
                             <img src="assets/images/feature-1.jpg">
                         </div>
-                      <div>
+                        <div>
                             <img src="assets/images/feature-2.jpg">
                         </div>
-                      <div>
+                        <div>
                             <img src="assets/images/feature-3.jpg">
                         </div>
-                      <div>
+                        <div>
                             <img src="assets/images/feature-4.jpg">
                         </div>
-                      <div>
+                        <div>
+                            <img src="assets/images/feature-4.jpg">
+                        </div>
+                        <div>
                             <img src="assets/images/feature-4.jpg">
                         </div>
                     </div>
@@ -313,14 +319,19 @@
                     <span class="h2-subheading green">Отдыхайте и играйте в гольф</span>
                     <h2>Полный доступ к гольф-площадке</h2>
                     <p class="mb-5">Все наши объекты находятся в шаговой доступности к премиум-гольф площадке Trump International. Каждому нашему клиенту мы дарим полный доступ к гольф-клубу.</p>
-                    <button class="btn btn-green btn-golf mb-5">Пропуск в TRUMP INTERNATIONAL</button>
-                    <p class="caption mt-5">Trump International Golf Club Dubai – первый его проект в сфере недвижимости, запущенный после инаугурации. На официальное открытие прибыли сыновья президента Эрик и Дональд Трамп-младший. Партнером Трампа выступил строительный гигант Damac.</p>
+                    <button class="btn btn-green btn-golf mb-5 d-none d-md-inline-block">Пропуск в TRUMP INTERNATIONAL</button>
+                    <p class="caption mt-0 mt-md-5">Trump International Golf Club Dubai – первый его проект в сфере недвижимости, запущенный после инаугурации. На официальное открытие прибыли сыновья президента Эрик и Дональд Трамп-младший. Партнером Трампа выступил строительный гигант Damac.</p>
                 </div>
                 <div class="col-sm-6">
                     <div class="golf-images">
                         <img src="assets/images/golf-1.jpg">
                         <img src="assets/images/golf-2.jpg">
                     </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <button class="btn btn-green btn-golf d-inline-block d-md-none mb-md-5 ">Пропуск в TRUMP INTERNATIONAL</button>
                 </div>
             </div>
         </div>
@@ -335,23 +346,23 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 text-center box box-white">
+            <div class="row extra-p">
+                <div class="col-lg-1 col-xl-2"></div>
+                <div class="col-lg-10 col-xl-8 text-center box box-white">
                     <h3 class="mb-5">ОТЛИЧНО! МЫ ОПЛАТИМ ВАМ:</h3>
                     <div class="container-fluid mb-4">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 mb-4 mb-sm-0">
                                 <img src="assets/images/icons/free-visit-1.svg" class="mb-4" height="72">
                                 <h4 class="mb-1">Билет на самолет</h4>
                                 <p class="mb-0">Туда-обратно</p>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 mb-4 mb-sm-0">
                                 <img src="assets/images/icons/free-visit-2.svg" class="mb-4" height="72">
                                 <h4 class="mb-1">Авто бизнес-класса</h4>
                                 <p class="mb-0">С личным водителем</p>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 mb-4 mb-sm-0">
                                 <img src="assets/images/icons/free-visit-3.svg" class="mb-4" height="72">
                                 <h4 class="mb-1">Проживание в отеле</h4>
                                 <p class="mb-0">Комфортабельный номер</p>
@@ -361,7 +372,7 @@
                     <p class="mb-4">Наш представитель встретит вас в аэропорту. На время показов и выбора объекта для инвестирования вы будете жить в комфортном отеле и ездить с личным водителем за наш счет.</p>
                     <button class="btn btn-primary mb-3">Заказать поездку в Дубай</button>
                 </div>
-                <div class="col-sm-2"></div>
+                <div class="col-lg-1 col-xl-2"></div>
             </div>
         </div>
         <div class="free-visit-bg" data-rellax-speed="-1"></div>
@@ -377,17 +388,17 @@
         </div>
         <div class="container">
             <div class="row text-center">
-                <div class="col-sm-4">
+                <div class="col-sm-4 mb-4">
                     <img src="assets/images/icons/investing-1.svg" class="mb-4" height="72">
                     <h4 class="mb-1">Высокая доходность</h4>
                     <p class="mb-0">Доходность инвестиций составляет ~10%</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 mb-4">
                     <img src="assets/images/icons/investing-2.svg" class="mb-4" height="72">
                     <h4 class="mb-1">Устойчивая экономика</h4>
                     <p class="mb-0">Хранение сбережений в местной валюте — Дирхам</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 mb-4">
                     <img src="assets/images/icons/investing-3.svg" class="mb-4" height="72">
                     <h4 class="mb-1">Отсутствие налогов</h4>
                     <p class="mb-0">НДФЛ составляет 0%</p>
@@ -398,8 +409,8 @@
     <section class="map">
         <div class="container mt-3 mb-3">
             <div class="row">
-                <div class="col-sm-6"></div>
-                <div class="col-sm-6">
+                <div class="col-md-3 col-lg-6"></div>
+                <div class="col-md-9 col-lg-6">
                     <div class="box box-white">
                         <span class="h2-subheading">Damac Russia</span>
                         <h3 class="mb-4">Контакты</h3>
@@ -428,12 +439,10 @@
                     <div class="col-md-4">
                         <img src="assets/images/logo-primary.svg" class="mb-3" alt="HeadWord Logo" title="HeadWord Logo">
                         <p>Ведущий застройщик элитной недвижимости в Дубае. Мы стремимся предоставить своим клиентам дома мечты и уникальные концепции проживания.</p>
-                        <p class="small d-block d-md-none mb-1">
-                            <a href="" data-toggle="modal" data-target="#policyModal">Политика конфеденциальности</a>
-                        </p>
-                        <p class="small mb-0">Все права защищены © 2020</p>
+                        <p class="small mb-0">Официальное представительство в РФ</p>
                     </div>
                     <div class="col-md-3">
+                        <hr class="d-block d-md-none my-4 my-md-0">
                         <div class="mb-1">
                             <h6>Наши объекты</h6>
                         </div>
@@ -496,9 +505,9 @@
                 </div>
                 <div class="modal-body">
                     <h5>Согласие на обработку персональных данных</h5>
-                    <p>Настоящим я соглашаюсь с тем, что ООО «ХЭДВОРД» может связываться со мной по почте, электронной почте, смс, телефону и с помощью других средств связи в целях маркетинга, рекламы и изучения мнений. Для того, чтобы получать только интересную мне информацию, я соглашаюсь на анализ и обработку истории моего взаимодействия с ООО «ХЭДВОРД». Я согласен на обработку моих персональных данных, включая трансграничную передачу и передачу третьим лицам, уполномоченным ООО «ХЭДВОРД» для осуществления целей маркетинга, рекламы и изучения мнений. Я прочитал положение об обработке, хранении и защите персональных данных пользователей сайта https://hword.ru и согласен с ее положениями. Я понимаю, что могу отозвать свое согласие в любой момент, посредством официального обращения к ООО «ХЭДВОРД».</p>
+                    <p>Настоящим я соглашаюсь с тем, что ООО «ДАМАК РАША» может связываться со мной по почте, электронной почте, смс, телефону и с помощью других средств связи в целях маркетинга, рекламы и изучения мнений. Для того, чтобы получать только интересную мне информацию, я соглашаюсь на анализ и обработку истории моего взаимодействия с ООО «ДАМАК РАША». Я согласен на обработку моих персональных данных, включая трансграничную передачу и передачу третьим лицам, уполномоченным ООО «ДАМАК РАША» для осуществления целей маркетинга, рекламы и изучения мнений. Я прочитал положение об обработке, хранении и защите персональных данных пользователей сайта https://damac.ru и согласен с ее положениями. Я понимаю, что могу отозвать свое согласие в любой момент, посредством официального обращения к ООО «ДАМАК РАША».</p>
                     <h5>ПОЛОЖЕНИЕ ОБ ОБРАБОТКЕ, ХРАНЕНИИ И ЗАЩИТЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</h5>
-                    <p>Законодательные и иные нормативные правовые акты Российской Федерации, в соответствии с которыми определяется положение об обработке, хранении и защите персональных данных пользователей сайта <a href="https://hword.ru">https://hword.ru</a>:</p>
+                    <p>Законодательные и иные нормативные правовые акты Российской Федерации, в соответствии с которыми определяется положение об обработке, хранении и защите персональных данных пользователей сайта <a href="https://damac.ru">https://damac.ru</a>:</p>
                     <ul>
                         <li>Трудовой кодекс Российской Федерации;</li>
                         <li>Федеральный закон от 27 июля 2006 г. № 152-ФЗ «О персональных данных»;</li>
@@ -515,10 +524,10 @@
                         1. Термины и определения
                     </h5>
                     <ul>
-                        <li>Сайт — совокупность программных и аппаратных средств для ЭВМ, обеспечивающих публикацию для всеобщего обозрения информации и данных, объединенных общим целевым назначением, посредством технических средств, применяемых для связи между ЭВМ в сети Интернет. Под Сайтом в политике понимается Сайт, расположенный в сети Интернет по адресу: <a href="https://hword.ru">https://hword.ru</a>.</li>
+                        <li>Сайт — совокупность программных и аппаратных средств для ЭВМ, обеспечивающих публикацию для всеобщего обозрения информации и данных, объединенных общим целевым назначением, посредством технических средств, применяемых для связи между ЭВМ в сети Интернет. Под Сайтом в политике понимается Сайт, расположенный в сети Интернет по адресу: <a href="https://damac.ru">https://damac.ru</a>.</li>
                         <li>Пользователь — пользователь сети Интернет и, в частности, Сайта.</li>
                         <li>Персональные данные — любая информация, относящаяся прямо или косвенно к определенному или определяемому физическому лицу (субъекту персональных данных).</li>
-                        <li>Оператор — организация, самостоятельно или совместно с другими лицами организующая обработку персональных данных, а также определяющая цели обработки персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными. Оператором является / Общество с ограниченной ответственностью «ХЭДВОРД» — ИНН 5029121007, ОГРН 1085029011132</li>
+                        <li>Оператор — организация, самостоятельно или совместно с другими лицами организующая обработку персональных данных, а также определяющая цели обработки персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными. Оператором является / Общество с ограниченной ответственностью «ДАМАК РАША» — ИНН 5029121007, ОГРН 1085029011132</li>
                         <li>Обработка персональных данных — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</li>
                         <li>Автоматизированная обработка персональных данных — обработка персональных данных с помощью средств вычислительной техники.</li>
                         <li>Распространение персональных данных — действие, направленное на раскрытие персональных данных определенному кругу лиц по предварительному согласию, в случаях, предусмотренных законом.</li>

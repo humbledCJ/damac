@@ -234,13 +234,17 @@ $(function () {
   // var actionScrollBlock = new Rellax('.action-scroll-block');
   // var historyLogoBlock = new Rellax('.after-logo');
 
-  $('.owl-carousel.header-features').owlCarousel({
-    dots: true,
-    items: 1,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true
-  });
+  if ($(window).width() <= 576) {
+    $('#features').addClass('owl-carousel');
+    $('#features').addClass('owl-theme');
+    $('#features').owlCarousel({
+      dots: true,
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true
+    });
+  }
 });
 
 

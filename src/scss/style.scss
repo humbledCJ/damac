@@ -167,6 +167,15 @@ body {
       bottom: 0;
       transform: translate(-50%, 50%);
       z-index: 10;
+
+      .row:not(.owl-carousel) {
+        padding-left: 15px; 
+        padding-right: 15px;
+      }
+
+      .row.owl-carousel {
+        margin: 0;
+      }
     }
   }
 
@@ -218,6 +227,7 @@ body {
   .owl-carousel {
 
     .owl-dots {
+      margin-top: 15px!important;
 
       .owl-dot {
 
@@ -225,14 +235,14 @@ body {
           width: 7px;
           height: 7px;
           margin: 5px 6px;
-          background: #D8D8D8;
+          background: #e8e8e8;
           transition: $transition;
         }
 
         &.active {
 
           span {
-            background: $bg-color-primary;
+            background: #bdbdbd;
           }
         }
       }
@@ -285,8 +295,6 @@ body {
     padding: 30px 30px 25px;
     border-radius: 4px;
     position: relative;
-    margin-left: 15px;
-    margin-right: 15px;
 
     &:before {
       content: '';
@@ -351,19 +359,19 @@ body {
       margin: 0 1rem 1rem 0;
       display: inline-block;
       width: 100%;
+      height: 200px;
+
+      &:nth-child(2n-1), &:last-child {
+        height: 300px;
+      }
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 3px;
       }
     } 
-    @for $i from 1 through 36 { 
-      div:nth-child(#{$i}) {
-        $h: (random(140) + 200) + px;
-        height: $h;
-      }
-    }
   }
 
   &.page-404 {
@@ -462,8 +470,15 @@ section {
             background-color: #ffffff;
             transition: $transition;
             opacity: 0;
-
             padding: 30px;
+
+            p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 6;
+              -webkit-box-orient: vertical;
+            }
           }
 
           &:hover .tile-back {

@@ -1,5 +1,7 @@
 @media (max-width: 1400px) {
-	
+	h1 {
+
+	}
 }
 
 @media (max-width: 1200px) {
@@ -7,19 +9,209 @@
 }
 
 @media (max-width: 992px) {
-	
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+	h5 {
+		font-size: 0.95em;
+	}
+
+	body {
+
+		header {
+			height: unset;
+			padding-bottom: 4em;
+
+			.moved {
+				position: unset;
+				left: unset;
+    		bottom: unset;
+    		transform: none;
+    		z-index: unset;
+			}
+
+			.offset-top {
+				margin-top: 125px;
+			}
+		}
+
+		.box {
+			.box-features:after {
+				font-size: 70px;
+			}
+
+			p {
+				font-size: 0.9em;
+			}
+		}
+	}
+
+	section {
+
+		&.golf {
+
+			.golf-images {
+
+				img {
+					position: unset;
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		&.objects {
+
+			padding-top: 75px;
+
+			.objects-tiles {
+	      grid-template-columns: 1fr 1fr;
+	      grid-template-rows: 1fr 1fr 1fr;
+			}
+		}
+	}
+
+	.btn {
+
+		&.btn-golf {
+
+			&:after {
+				display: none;
+			}
+		}
+	}
 }
 
 @media (max-width: 768px) {
-	
+
+	body {
+
+		header {
+
+			.offset-top {
+				margin-top: 50px;
+			}
+		}
+	}
+
+	.d-flex-col-mobile {
+		display: flex;
+		flex-direction: column!important;
+	}
+
+	.btn {
+		&.btn-phone {
+			padding: 0!important;
+			position: relative;
+			font-size: 24px;
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			line-height: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
 }
 
 @media (max-width: 576px) {
-	
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	h3 {
+		font-size: 1.1em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+	h5 {
+		font-size: 0.95em;
+	}
+
+	body {
+  	header {
+
+  		.navbar {
+  			padding: 25px 0;
+  		}
+
+  		.moved {
+
+	      .row {
+	        flex-wrap: nowrap;
+	      }
+	    }
+  	}
+
+  	.btn {
+  		padding-left: 5px!important;
+  		padding-right: 5px!important;
+  		width: 100%;
+  	}
+
+  	.box {
+
+  		&.box-features:after {
+  			top: 50%;
+  			left: 20px;
+  			font-size: 60px;
+  			transform: translate(0, -50%);
+  		}
+  	}
+  }
+
+	section {
+
+		&.objects {
+
+			.objects-tiles {
+	      grid-template-columns: 1fr;
+	      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+			}
+		}
+
+		&.features {
+			padding-bottom: 20px;
+		}
+
+		&.golf {
+			padding-bottom: 85px;
+		}
+	}
+
+	.extra-p {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 @media (max-width: 380px) {
-  
+
 }
 
 @media (max-width: 365px) {
