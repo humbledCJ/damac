@@ -55,10 +55,24 @@
 	&.btn-primary {
 		background-color: #FFAD54!important;
 		border-color: #FFAD54!important;
+		box-shadow: 0 10px 20px -5px rgba(244, 172, 82, 0.5);
 
 		&:hover {
 			background-color: #eaa04f!important;
 			border-color: #eaa04f!important;
+			box-shadow: 0 10px 20px -20px rgba(244, 172, 82, 0.5);
+		}
+	}
+
+	&.btn-blue {
+		background-color: #548FFF!important;
+		border-color: #548FFF!important;
+		box-shadow: 0 10px 20px -5px rgba(84, 143, 251, 0.5);
+
+		&:hover {
+			background-color: #5187ef!important;
+			border-color: #5187ef!important;
+			box-shadow: 0 10px 20px -20px rgba(84, 143, 251, 0.5)
 		}
 	}
 

@@ -282,7 +282,7 @@ body {
   }
 
   .box {
-    padding: 30px 20px 25px;
+    padding: 30px 30px 25px;
     border-radius: 4px;
     position: relative;
     margin-left: 15px;
@@ -384,6 +384,22 @@ body {
     p {
       color: #fff;
       margin-bottom: 30px;
+    }
+  }
+
+  .text-group {
+    margin-bottom: 15px;
+
+    label {
+      color: $font-color-dark;
+      margin-bottom: 5px;
+    }
+
+    h5 {
+      font-size: 1.28em;
+      font-family: $font-family-main;
+      font-weight: bold;
+      text-transform: unset;
     }
   }
 }
@@ -528,14 +544,64 @@ section {
       border-right: none;
     }
   }
+
+  &.free-visit {
+    position: relative;
+
+    .free-visit-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('../assets/images/free-visit.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &.map {
+
+    .map-frame {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .box {
+      box-shadow: 0 20px 30px -15px #afafaf;
+    }
+
+    .container {
+      pointer-events: none;
+
+      .box {
+        pointer-events: all!important;
+      }
+    }
+  }
 }
 
 footer {
   position: relative;
   z-index: 0;
-  margin-top: -100px;
-  padding: 100px 0 60px;
-  background-color: $bg-color-primary-darker;
+  padding: 75px 0 85px;
+  background-color: $bg-color-white;
+
+  &.sub {
+    background-color: $bg-color;
+    padding: 10px 0;
+    color: $font-color-dark;
+
+    a {
+      color: $font-color-dark;
+    }
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -605,7 +671,6 @@ p {
   &.small {
     font-size: 0.785em;
     opacity: 0.7;
-    font-weight: bold;
   }
 
   &.caption {
@@ -687,6 +752,7 @@ ul {
     } 
   }
 }
+
 
 
 
