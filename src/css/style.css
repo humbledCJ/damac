@@ -168,7 +168,7 @@ section.golf .caption:after { content: ''; position: absolute; bottom: -30px; ri
 
 section.free-visit { position: relative; }
 
-section.free-visit .free-visit-bg { position: absolute; top: 0; right: 0; width: 100%; height: 100%; z-index: -1; background-image: url("../assets/images/free-visit.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; }
+section.free-visit .free-visit-bg { position: absolute; top: 0; right: 0; width: 100%; height: 100%; z-index: -1; background-image: url("../assets/images/free-visit.jpg"); background-position: center top; background-repeat: no-repeat; background-size: cover; }
 
 section.map .map-frame { position: absolute; top: 0; right: 0; width: 100%; height: 100%; z-index: 1; }
 
