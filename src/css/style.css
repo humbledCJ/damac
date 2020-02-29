@@ -50,7 +50,7 @@ body header .moved .row:not(.owl-carousel) { padding-left: 15px; padding-right: 
 
 body header .moved .row.owl-carousel { margin: 0; }
 
-body .form-control { outline: none !important; border: none !important; border-radius: 2px; font-size: 0.92em; font-weight: bold; padding-left: 10px; color: #959595; }
+body .form-control { outline: none !important; border: none !important; border-radius: 2px; font-size: 0.92em; font-weight: bold; padding-left: 10px; background-color: #F4F4F4; color: #959595; }
 
 body .form-control::-webkit-input-placeholder { color: #BCBCBC; }
 
@@ -60,9 +60,9 @@ body .form-control:-ms-input-placeholder { color: #BCBCBC; }
 
 body .form-control:-moz-placeholder { color: #BCBCBC; }
 
-body .form-control:focus, body .form-control.focus { outline: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; border: inherit !important; }
+body .form-control:focus, body .form-control.focus { outline: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; border: inherit !important; background-color: #F4F4F4; }
 
-body .input-group .input-group-prepend .input-group-text { background-color: #fff !important; border-color: #fff; border-right: 2px solid #f5f5f5; font-size: 0.92em; font-weight: bold; color: #333333; }
+body .input-group .input-group-prepend .input-group-text { background-color: #fff !important; border-color: #fff; border: 1px solid #F4F4F4; font-size: 0.92em; font-weight: bold; color: #333333; }
 
 body .owl-carousel .owl-dots { margin-top: 15px !important; }
 
@@ -76,7 +76,11 @@ body .owl-carousel .owl-item { display: -ms-flexbox; display: -webkit-box; displ
 
 body .owl-carousel.header-features .owl-dots { position: absolute; bottom: 0.375em; right: 0px; }
 
-body .modal .modal-dialog .modal-content { border-radius: 2px; border: none; }
+body .modal .modal-dialog .modal-content { border-radius: 4px; border: none; }
+
+body .modal .modal-dialog .modal-content:after { content: ''; position: absolute; top: 5px; left: 5px; width: calc(100% - 10px); height: calc(100% - 10px); border-radius: 4px; border: 1px solid #F7F7F7; pointer-events: none; }
+
+body .modal .modal-dialog .modal-content .modal-header { border: none; padding-bottom: 0em; }
 
 body .modal .modal-dialog .modal-content .modal-body p, body .modal .modal-dialog .modal-content .modal-body ul { font-size: 0.9em; }
 
