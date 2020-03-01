@@ -1,13 +1,14 @@
 'use strict';
 
-var target = 'Клиент оставил полные контактные данные и хочет, чтобы ему перезвонили.';
 var controller = new ScrollMagic.Controller();
 
 function sendData(el) {
-  var name = $('#name').val();
-  var extraPhone = $("#extra-phone").val();
-  var phone = (extraPhone === '') ? '+' + $('#phone').val() : '+' + $('#phone').val() + ' доб.: ' + extraPhone;
-  var email = $('#email').val();
+  var name = $('#modal-name').val();
+  var extraPhone = $("#modal-extra-phone").val();
+  var phone = (extraPhone === '') ? '+' + $('#modal-phone').val() : '+' + $('#modal-phone').val() + ' доб.: ' + extraPhone;
+  var email = $('#modal-email').val();
+
+  console.table([name, extraPhone, phone, email]);
 
   if (!$(el).hasClass('disabled') && !$(el).hasClass('loading')) {
     $.ajax({
@@ -17,7 +18,6 @@ function sendData(el) {
         name: name,
         phone: phone,
         email: email,
-        target: target
       },
       beforeSend: function() {
         switchLoading(el, 1);
@@ -48,7 +48,6 @@ function sendPhone(el) {
         name: '',
         phone: phone,
         email: '',
-        target: target
       },
       beforeSend: function() {
         switchLoading(el, 1);
@@ -98,88 +97,6 @@ function showResponseMessage(el, status) {
   setTimeout(function() { 
     $(el).popover('dispose');
   }, 2100);
-}
-
-function setTarget(newTarget) {
-  switch (newTarget) {
-    case 'Support':
-      target = 'Клиент заинтересован в услуге "Ведение и поддержка проектов".';
-      break;
-    case 'Recruiting': 
-      target = 'Клиент заинтересован в услуге "Профессиональный рекрутинг".';
-      break;
-    case 'Freelance': 
-      target = 'Клиент заинтересован в услуге "Сотрудничество с IT-фрилансерами".';
-      break;
-    case 'Call':
-      target = 'Клиент оставил телефон и хочет, чтобы ему перезвонили.';
-      break;
-    case 'Bid':
-      target = 'Клиент оставил полные контактные данные и хочет, чтобы ему перезвонили.';
-      break;
-    default:
-      break;
-  }
-}
-
-function CaptchaCallback() {
-  reCaptcha1 = grecaptcha.render('RecaptchaField1', {
-    'sitekey' : '6Ld6ynAUAAAAABnnwcq-6gPsDTfES46qTz6KXkXX',
-    callback: function() {
-      captchaResponseCallback("success", "modal")
-    },
-    expiredСallback: function() {
-      captchaCallback("expired", "modal")
-    },
-    errorСallback: function() {
-      captchaCallback("error", "modal")
-    }
-  }); 
-  reCaptcha2 = grecaptcha.render('RecaptchaField2', {
-    'sitekey' : '6LfCzXAUAAAAAMXWleAl6Y-5vn74KKseYIze-nOo',
-    callback: function() {
-      captchaResponseCallback("success", "subform")
-    },
-    expiredСallback: function() {
-      captchaCallback("expired", "subform")
-    },
-    errorСallback: function() {
-      captchaCallback("error", "subform")
-    }
-  }); 
-}
-
-function captchaResponseCallback(status, form) {
-  if (form === 'modal') {
-    switch (status) {
-      case 'success':
-        $('#modal-send-btn').removeClass('reCaptchaNotPassed');
-        break;
-      case 'expired':
-        $('#modal-send-btn').addClass('reCaptchaNotPassed');
-        break;
-      case 'error':
-        $('#modal-send-btn').addClass('reCaptchaNotPassed');
-        break;
-      default: 
-        break;
-    }
-  } 
-  else if (form === 'subform') {
-    switch (status) {
-      case 'success':
-        $('#subform-send-btn').removeClass('reCaptchaNotPassed');
-        break;
-      case 'expired':
-        $('#subform-send-btn').addClass('reCaptchaNotPassed');
-        break;
-      case 'error':
-        $('#subform-send-btn').addClass('reCaptchaNotPassed');
-        break;
-      default: 
-        break;
-    }
-  }
 }
 
 function smoothScroll(id) {

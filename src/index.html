@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
     .preload-screen {
         position: absolute;
@@ -121,7 +122,7 @@
                                 </div>
                                 <input type="text" class="form-control bfh-phone" data-format="d (ddd) ddd-dd-dd" placeholder="Ваш телефон..." required>
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="submit" onclick="setTarget('Call'); sendPhone(this);" onsubmit="return false;">Получить консультацию</button>
+                                    <button class="btn btn-primary" type="submit" onclick="sendPhone(this);" onsubmit="return false;">Получить консультацию</button>
                                 </div>
                             </div>
                         </div>
@@ -506,32 +507,32 @@
                 <div class="modal-body">
                     <form class="form-block" role="form" data-toggle="validator" onsubmit="return false;" novalidate="true">
                         <div class="form-group">
-                            <label for="name">Как Вас зовут? <span class="required">*</span></label>
-                            <input type="text" class="form-control" id="name" placeholder="Введите Ваше имя..." required="">
+                            <label for="modal-name">Как Вас зовут? <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="modal-name" placeholder="Введите Ваше имя..." required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Ваш телефонный номер? <span class="required">*</span></label>
+                            <label for="modal-phone">Ваш телефонный номер? <span class="required">*</span></label>
                             <div class="row">
                                 <div class="col-sm-8">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">+</span>
                                         </div>
-                                        <input type="text" class="form-control bfh-phone" data-format="d (ddd) ddd-dd-dd" id="phone" placeholder="В формате X (XXX) XXX-XX-XX" required="">
+                                        <input type="text" class="form-control bfh-phone" data-format="d (ddd) ddd-dd-dd" id="modal-phone" placeholder="В формате X (XXX) XXX-XX-XX" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 mt-2 mt-sm-0">
-                                    <input type="text" class="form-control bfh-phone" data-format="dddddd" id="extra-phone" placeholder="доб.">
+                                    <input type="text" class="form-control bfh-phone" data-format="dddddd" id="modal-extra-phone" placeholder="доб.">
                                 </div>
                             </div>
                             <small class="form-text text-muted">Мы обещаем, что Ваш телефон не попадет в руки злоумышленников.</small>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Ваш рабочий e-mail?</label>
-                            <input type="email" class="form-control" id="email" placeholder="Введите Ваш e-mail" required="">
+                            <label for="modal-email">Ваш рабочий e-mail?</label>
+                            <input type="email" class="form-control" id="modal-email" placeholder="Введите Ваш e-mail">
                             <small class="form-text text-muted">На него менеджер пришлет информацию по предложению после звонка.</small>
                         </div>
-                        <button type="submit" class="btn btn-blue disabled" onclick="setTarget('Bid'); sendData(this)">Отправить заявку</button>
+                        <button type="submit" class="btn btn-blue disabled" onclick="sendData(this)">Отправить заявку</button>
                     </form>
                 </div>
             </div>
@@ -765,7 +766,6 @@
                 </div>
             </div>
         </div>
-        <link rel="stylesheet" href="css/style.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>

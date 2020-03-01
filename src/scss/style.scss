@@ -177,6 +177,21 @@ body {
         margin: 0;
       }
     }
+
+    .form-control {
+      background-color: #fff!important;
+    }
+
+    .input-group {
+
+    .input-group-prepend {
+
+      .input-group-text {
+        border: none;
+        border-right: 2px solid $bg-color;
+      }
+    }
+  }
   }
 
   .form-control {
