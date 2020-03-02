@@ -155,6 +155,19 @@ body {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+
+      &.header-bg-faded:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
     }
 
     .offset-top {
@@ -381,6 +394,269 @@ body {
 
     p {
       color: $font-color-dark!important;
+    }
+  }
+
+  .card {
+    border: none;
+    overflow: hidden;
+
+    .card-header {
+      background-color: #FCFCFC;
+      padding: 25px 30px 20px;
+      border-bottom: 1px solid #efefef;
+
+      h3 {
+        font-family: $font-family-main;
+        font-weight: bold;
+        text-transform: unset;
+        font-size: 1.57em;
+        margin: 0;
+        line-height: 1;
+      }
+    }
+
+    .card-body {
+      padding: 25px 30px 20px;
+
+      .card-title {
+        font-family: $font-family-main;
+        font-weight: bold;
+        text-transform: unset;
+        font-size: 1.57em;
+      }
+
+      .card-subtitle {
+        color: $font-color-dark;
+      }
+
+      .card-text {
+        &.card-text-overflow {
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+        }
+      }
+
+      &.card-body-map {
+        padding: 0!important;
+      }
+
+      &.card-body-gray {
+        background-color: #FCFCFC;
+      }
+    }
+
+    .card-footer {
+      background-color: #fff;
+      padding: 15px 30px 15px;
+      border-top: 1px solid #efefef;
+
+      .card-price {
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  .property {
+    display: flex;
+    flex-direction: row;
+    background-color: $bg-color-white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+
+    .property-images {
+      width: 400px;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .property-body {
+      padding: 30px 30px 25px;
+
+      .property-title {
+
+        h3 {
+          font-family: $font-family-main;
+          font-weight: bold;
+          font-size: 1.57em;
+          text-transform: unset;
+        }
+
+        .property-body-adress {
+          color: $font-color-dark;
+        }
+      }
+
+      .property-description {
+        margin-bottom: 20px;
+
+        p {
+          text-align: justify;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+        }
+      }
+
+      .property-characteristics {
+        display: flex;
+        flex-direction: row;
+
+        .property-characteristics-item {
+          padding-right: 50px;
+        }
+
+        h5, h6 {
+          text-align: center;
+          font-family: $font-family-main;
+          font-weight: bold;
+          text-transform: unset;
+        }
+
+        h5 {
+          font-size: 1.5em;
+        }
+
+         h6 {
+          color: $font-color-dark;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  .characteristics {
+    display: flex;
+    align-items: flex-end;
+    white-space: nowrap;
+    line-height: 1;
+    margin-bottom: 20px;
+
+    .key {
+
+    }
+
+    .line {
+      width: 100%;
+      height: 0px;
+      border-bottom: 1px dashed #DDDDDD;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .value {
+      font-weight: bold;
+    }
+  }
+
+  .property-video-btn {
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    background-image: url('../assets/images/properties/video-button.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    .fa {
+        transition: transform 0.2s ease-in-out;
+        transform: scale(1);
+      }
+
+    &:hover {
+
+      .fa {
+        transform: scale(1.2);
+      }
+
+      &:after {
+        border-width: 0px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 6px solid rgba(255, 255, 255, 0.5);
+      transition: border-width 0.2s ease-in-out;
+    }
+
+    &:before {
+      content: 'Видео-презентация';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: auto;
+      height: auto;
+      padding: 15px 85px;
+      z-index: -1;
+      font-size: 16px;
+      font-weight: bold;
+      white-space: nowrap;
+      border-radius: 40px;
+      background-color: #18C77E !important;
+      border-color: #18C77E !important;
+      box-shadow: 0 10px 20px -5px rgba(113, 222, 176, 0.5);
+      transform: translate(calc(-100% + 30px), -50%);
+      cursor: pointer;
+      pointer-events: all;
+    }
+  }
+
+  .filters {
+    display: flex;
+
+    .filter {
+      cursor: pointer;
+      color: $font-color-dark;
+
+      &:hover {
+        color: $font-color;
+      }
+
+      &.active {
+        color: $font-color;
+
+        .filter-direction {
+          visibility: visible;
+        }
+      }
+
+      .filter-direction {
+        visibility: hidden;
+      }
     }
   }
 
@@ -631,6 +907,30 @@ section {
 
       .box {
         pointer-events: all!important;
+      }
+    }
+  }
+
+  &.moved-top {
+    margin-bottom: -200px;
+
+    .container {
+      transform: translateY(-200px);
+    }
+  }
+
+  &.property-photos {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    div {
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
