@@ -198,4 +198,12 @@ $(window).on('load', function(){
   //hidePreloadScreen();
   //animateIntroElements();
   animateScrollElements();
+
+  $('#lightgallery-masonry').lightGallery({
+    selector: 'a',
+  });
+
+  $('#lightgallery-property-photos').lightGallery({
+    selector: 'a',
+  });
 });

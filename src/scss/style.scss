@@ -207,6 +207,18 @@ body {
   }
   }
 
+  .slick-arrow {
+    opacity: .75;
+
+    &.slick-prev {
+      left: 25px!important;
+    }
+
+    &.slick-next {
+      right: 25px!important;
+    }
+  }
+
   .form-control {
     outline: none!important;
     border: none!important;
