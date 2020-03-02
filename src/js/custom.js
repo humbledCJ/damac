@@ -163,6 +163,28 @@ $(function () {
     });
   }
 
+  $('#key-objects').addClass('owl-carousel');
+  $('#key-objects').addClass('owl-theme');
+  $('#key-objects').owlCarousel({
+    dots: true,
+    items: 3,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    margin: 30,
+    responsive:{
+        0:{
+            items:1,
+        },
+        768:{
+            items:2,
+        },
+        992:{
+            items:3,
+        }
+    }
+  });
+
   $('.property-images').slick({
     infinite: true,
     speed: 300,

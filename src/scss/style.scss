@@ -523,6 +523,10 @@ body {
 
         .property-characteristics-item {
           padding-right: 50px;
+
+          &:last-child {
+            padding-right: 0;
+          }
         }
 
         h5, h6 {
