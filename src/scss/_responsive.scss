@@ -114,6 +114,10 @@
 			}
 		}
 	}
+
+	.property {
+		flex-wrap: wrap;
+	} 
 }
 
 @media (max-width: 768px) {
@@ -278,6 +282,15 @@
 				} 
 			} 
 		} 
+
+		.property-video-btn {
+			width: 100px;
+			height: 100px;
+
+			&:before {
+				padding: 15px 60px;
+			}
+		}
   }
 
 	section {
@@ -306,7 +319,14 @@
 }
 
 @media (max-width: 380px) {
+	.property-video-btn {
+		width: 100px;
+		height: 100px;
 
+		&:before {
+			display: none
+		}
+	}
 }
 
 @media (max-width: 365px) {

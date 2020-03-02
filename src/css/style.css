@@ -378,7 +378,8 @@ ul.rect li:before { content: ''; position: absolute; top: 7px; left: -15px; widt
   section.moved-top { margin-bottom: 0; }
   section.moved-top .container { -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
   .card .card-body-map { height: 300px; }
-  .btn.btn-golf:after { display: none; } }
+  .btn.btn-golf:after { display: none; }
+  .property { -ms-flex-wrap: wrap; flex-wrap: wrap; } }
 
 @media (max-width: 768px) { body header .offset-top { margin-top: 50px; }
   body .card .card-header h3 { font-size: 1.3em; }
@@ -404,9 +405,14 @@ ul.rect li:before { content: ''; position: absolute; top: 7px; left: -15px; widt
   body .card .card-footer { padding: 15px 20px 15px; }
   body .property .property-body .property-characteristics { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   body .property .property-body .property-characteristics .property-characteristics-item { padding-right: 0; }
+  body .property-video-btn { width: 100px; height: 100px; }
+  body .property-video-btn:before { padding: 15px 60px; }
   section.objects .objects-tiles { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; }
   section.features { padding-bottom: 20px; }
   section.golf { padding-bottom: 85px; }
   .extra-p { padding-left: 15px; padding-right: 15px; } }
+
+@media (max-width: 380px) { .property-video-btn { width: 100px; height: 100px; }
+  .property-video-btn:before { display: none; } }
 
 /*# sourceMappingURL=style.css.map */
