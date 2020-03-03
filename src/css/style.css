@@ -257,11 +257,11 @@ section.golf { padding-bottom: 200px; }
 
 section.golf .golf-images { position: relative; }
 
-section.golf .golf-images img { width: 100%; position: absolute; }
+section.golf .golf-images picture { width: 100%; position: absolute; }
 
-section.golf .golf-images img:nth-child(1) { top: 100px; right: 0; z-index: 2; }
+section.golf .golf-images picture:nth-child(1) { top: 100px; right: 0; z-index: 2; }
 
-section.golf .golf-images img:nth-child(2) { top: 0px; right: -100px; z-index: 1; }
+section.golf .golf-images picture:nth-child(2) { top: 0px; right: -100px; z-index: 1; }
 
 section.golf .caption:after { content: ''; position: absolute; bottom: -30px; right: 0; width: 100px; height: 10px; border-radius: 2px; border: 1px solid #E8E8E8; border-top: none; border-right: none; }
 
@@ -378,7 +378,7 @@ ul.rect li:before { content: ''; position: absolute; top: 7px; left: -15px; widt
   body .box .box-features:after { font-size: 70px; }
   body .box p { font-size: 0.9em; }
   body .property .property-images { width: 100%; }
-  section.golf .golf-images img { position: unset; margin-bottom: 30px; }
+  section.golf .golf-images picture { position: unset; margin-bottom: 30px; }
   section.objects { padding-top: 75px; }
   section.objects .objects-tiles { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; }
   section.moved-top { margin-bottom: 0; }
