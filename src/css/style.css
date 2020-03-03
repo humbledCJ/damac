@@ -257,6 +257,8 @@ section.golf { padding-bottom: 200px; }
 
 section.golf .golf-images { position: relative; }
 
+section.golf .golf-images img { width: 100%; }
+
 section.golf .golf-images picture { width: 100%; position: absolute; }
 
 section.golf .golf-images picture:nth-child(1) { top: 100px; right: 0; z-index: 2; }
